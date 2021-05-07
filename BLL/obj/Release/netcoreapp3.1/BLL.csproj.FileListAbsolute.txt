@@ -1,0 +1,3 @@
+D:\LẬP TRÌNH WEB API\WebsiteFreshFood_API\BLL\obj\Release\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+D:\LẬP TRÌNH WEB API\WebsiteFreshFood_API\BLL\obj\Release\netcoreapp3.1\BLL.AssemblyInfo.cs
+D:\LẬP TRÌNH WEB API\WebsiteFreshFood_API\BLL\obj\Release\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
