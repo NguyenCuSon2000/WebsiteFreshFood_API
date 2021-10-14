@@ -7,3 +7,12 @@ D:\LẬP TRÌNH WEB API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model
 D:\LẬP TRÌNH WEB API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.dll
 D:\LẬP TRÌNH WEB API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
 D:\LẬP TRÌNH WEB API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\bin\Debug\netcoreapp3.1\Model.dll
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\bin\Debug\netcoreapp3.1\Model.pdb
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.dll
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
+D:\BÀI TẬP LỚN API\WebsiteFreshFood_API\Model\obj\Debug\netcoreapp3.1\Model.csproj.AssemblyReference.cache

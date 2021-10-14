@@ -8,6 +8,9 @@ namespace BLL
     public partial interface ISanPhamBussiness
     {
         List<SanPhamModel> GetDataAll();
+        List<SanPhamModel> GetDatabyMaLoai(string maloai);
+        List<SanPhamModel> GetProductNew();
+        SanPhamModel GetDatabyID(string masp);
         bool Create(SanPhamModel model);
         bool Update(SanPhamModel model);
         bool Delete(int masp);

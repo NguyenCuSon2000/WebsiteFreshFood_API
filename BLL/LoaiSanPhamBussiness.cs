@@ -26,8 +26,11 @@ namespace BLL
         {
             return _res.GetDataAll();
         }
-      
 
+        public LoaiSanPhamModel GetDatabyID(string maloaisp)
+        {
+            return _res.GetDatabyID(maloaisp);
+        }
         public bool Create(LoaiSanPhamModel model)
         {
             return _res.Create(model);
@@ -40,9 +43,9 @@ namespace BLL
         {
             return _res.Delete(maloaisp);
         }
-        public List<LoaiSanPhamModel> Search(int pageIndex, int pageSize, out long total, string tenloai)
+        public List<LoaiSanPhamModel> Search(int pageIndex, int pageSize, out long total, string maloaisp, string tenloai)
         {
-            return _res.Search(pageIndex, pageSize, out total, tenloai);
+            return _res.Search(pageIndex, pageSize, out total, maloaisp, tenloai);
         }
     }
 }

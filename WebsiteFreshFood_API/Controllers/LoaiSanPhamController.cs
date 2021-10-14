@@ -1,16 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BLL;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Model;
-using BLL;
-using Microsoft.Extensions.Configuration;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebsiteFreshFood_API.Controllers
 {
+   
     [Route("api/[controller]")]
     [ApiController]
     public class LoaiSanPhamController : ControllerBase
@@ -23,6 +27,7 @@ namespace WebsiteFreshFood_API.Controllers
             _path = configuration["AppSettings:PATH"];
         }
 
+        [AllowAnonymous]
         // GET: api/<LoaiSanPhamController>
         [Route("get-all")]
         [HttpGet]
@@ -47,19 +52,23 @@ namespace WebsiteFreshFood_API.Controllers
             return model;
         }
 
-
-
-        [Route("delete-category")]
-        [HttpPost]
-        public IActionResult DeleteCategory([FromBody] Dictionary<string, object> formData)
+       
+        [Route("get-by-id/{maloaisp}")]
+        [HttpGet]
+        public LoaiSanPhamModel GetDatabyID(string maloaisp)
         {
-            string maloaisp = "";
-            if (formData.Keys.Contains("maloaisp") && !string.IsNullOrEmpty(Convert.ToString(formData["maloaisp"]))) { maloaisp = Convert.ToString(formData["maloaisp"]); }
-            _loaispBusiness.Delete(maloaisp);
+            return _loaispBusiness.GetDatabyID(maloaisp);
+        }
+
+        [Route("delete-category/{id}")]
+        [HttpDelete]
+        public IActionResult DeleteCategory(string id)
+        {
+           _loaispBusiness.Delete(id);
             return Ok();
         }
 
-
+        [AllowAnonymous]
         [Route("search")]
         [HttpPost]
         public ResponseModel Search([FromBody] Dictionary<string, object> formData)
@@ -69,10 +78,12 @@ namespace WebsiteFreshFood_API.Controllers
             {
                 var page = int.Parse(formData["page"].ToString());
                 var pageSize = int.Parse(formData["pageSize"].ToString());
+                string maloaisp = "";
+                if (formData.Keys.Contains("maloaisp") && !string.IsNullOrEmpty(Convert.ToString(formData["maloaisp"]))) { maloaisp = Convert.ToString(formData["maloaisp"]); }
                 string tenloai = "";
                 if (formData.Keys.Contains("tenloai") && !string.IsNullOrEmpty(Convert.ToString(formData["tenloai"]))) { tenloai = Convert.ToString(formData["tenloai"]); }
                 long total = 0;
-                var data = _loaispBusiness.Search(page, pageSize, out total, tenloai);
+                var data = _loaispBusiness.Search(page, pageSize, out total, maloaisp, tenloai);
                 response.TotalItems = total;
                 response.Data = data;
                 response.Page = page;

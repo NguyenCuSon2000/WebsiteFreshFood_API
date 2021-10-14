@@ -32,6 +32,23 @@ namespace DAL
             }
         }
 
+        public LoaiSanPhamModel GetDatabyID(string maloaisp)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_loaisp_get_by_id",
+                     "@maloaisp", maloaisp);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<LoaiSanPhamModel>().FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public bool Create(LoaiSanPhamModel model)
         {
             string msgError = "";
@@ -91,7 +108,7 @@ namespace DAL
         }
 
 
-        public List<LoaiSanPhamModel> Search(int pageIndex, int pageSize, out long total, string tenloai)
+        public List<LoaiSanPhamModel> Search(int pageIndex, int pageSize, out long total,string maloaisp, string tenloai)
         {
             string msgError = "";
             total = 0;
@@ -100,6 +117,7 @@ namespace DAL
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_loaisp_search",
                     "@page_index", pageIndex,
                     "@page_size", pageSize,
+                    "@maloaisp", maloaisp,
                     "@tenloai", tenloai);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);

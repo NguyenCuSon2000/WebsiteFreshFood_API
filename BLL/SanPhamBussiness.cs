@@ -26,7 +26,19 @@ namespace BLL
         {
             return _res.GetDataAll();
         }
-      
+        public List<SanPhamModel> GetDatabyMaLoai(string maloai)
+        {
+            return _res.GetDatabyMaLoai(maloai);
+        }
+        public SanPhamModel GetDatabyID(string masp)
+        {
+            return _res.GetDatabyID(masp);
+        }
+
+        public List<SanPhamModel> GetProductNew()
+        {
+            return _res.GetProductNew();
+        }
 
         public bool Create(SanPhamModel model)
         {

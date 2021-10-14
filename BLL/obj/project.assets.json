@@ -1837,11 +1837,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\BLL\\BLL.csproj",
+      "projectUniqueName": "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\BLL\\BLL.csproj",
+      "projectPath": "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\Test User\\.nuget\\packages\\",
-      "outputPath": "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\BLL\\obj\\",
+      "outputPath": "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1861,11 +1861,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\DAL\\DAL.csproj"
+            "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\DAL\\DAL.csproj"
             },
-            "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\Model\\Model.csproj": {
-              "projectPath": "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\Model\\Model.csproj"
+            "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\Model\\Model.csproj": {
+              "projectPath": "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\Model\\Model.csproj"
             }
           }
         }
@@ -1908,7 +1908,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

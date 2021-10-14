@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\Model\\Model.csproj": {}
+    "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\Model\\Model.csproj": {}
   },
   "projects": {
-    "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\Model\\Model.csproj": {
+    "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\Model\\Model.csproj",
+        "projectPath": "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\Test User\\.nuget\\packages\\",
-        "outputPath": "D:\\LẬP TRÌNH WEB API\\WebsiteFreshFood_API\\Model\\obj\\",
+        "outputPath": "D:\\BÀI TẬP LỚN API\\WebsiteFreshFood_API\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
